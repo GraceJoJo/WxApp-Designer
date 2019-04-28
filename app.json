@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#212121",
+    "selectedColor": "#d1a938",
+    "list": [
+      {
+        "pagePath": "pages/welcome/welcome", 
+        "text": "设计",
+        "iconPath": "src/icn_designer.png", 
+        "selectedIconPath": "src/icn_designer_highlight.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现",
+        "iconPath": "src/icn_guang.png",
+        "selectedIconPath": "src/icn_guang_highlight.png"
+      }
+    ]
+  }
+}
