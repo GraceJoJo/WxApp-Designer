@@ -1,0 +1,53 @@
+<!--pages/home/home.wxml-->
+<view>
+  <!-- banner -->
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" vertical="{{isVertical}}" duration="{{duration}}" circular='false' indicator-color="#FFFFFF">
+    <swiper-item wx:for="{{imgUrls}}" wx:key="urlPos">
+      <image src="{{item}}" />
+    </swiper-item>
+  </swiper>
+  <!-- 商品分类 -->
+  <view class='category'>
+    <block wx:for="{{goodsCategoryList}}" wx:key="pos">
+      <view class='layout_vertical' bindtap='categoryDetail' data-id='{{item.id}}'>
+        <image src="{{item.logo}}" class='logo'></image>
+        <text class='category-text'>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='line'></view>
+  <!-- 嵌套列表 -->
+  <view wx:for="{{homeList}}" wx:key="id">
+    <view class='relative'>
+      <image src="{{item.image}}" class='banner'></image>
+      <view class='absolute verticalLayout'>
+        <text class='title-text'>{{item.name}}</text>
+        <text class='title-text'>{{item.title}}</text>
+      </view>
+    </view>
+    <!-- 横向滑动列表 -->
+    <scroll-view scroll-x class="scroll-x">
+      <view class='rowItem' wx:for="{{item.items}}" wx:for-item="items" wx:key="id">
+        <view class='verticalLayout'>
+          <image src="{{items.image}}"></image>
+          <text>{{items.keyword}}</text>
+          <text>￥{{items.price}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+  <scroll-view scroll-y style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  </scroll-view>
+</view>

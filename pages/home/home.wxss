@@ -1,0 +1,108 @@
+/* pages/home/home.wxss */
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+swiper {
+  height: 400rpx;
+}
+
+/*flex-wrap:wrap flex容器为多行。就是换行的意思 */
+
+.category {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rpx;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 100rpx;
+  height: 100rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.category-text {
+  display: inline-block;
+  vertical-align: text-bottom;
+  padding: 0 10rpx 0 0;
+  font-size: 24rpx;
+  color: #212121;
+}
+
+/*纵向布局  */
+
+.layout_vertical {
+  height: 140rpx;
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: column;
+}
+
+/* 分割线 */
+
+.line {
+  background-color: #eee;
+  height: 20rpx;
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.banner {
+  width: 100%;
+}
+
+.rowContainer {
+  display: flex;
+}
+
+.rowItem {
+  background-color: #fff;
+  display: inline-block;
+  margin: 20rpx;
+}
+
+.rowItem image {
+  height: 230rpx;
+  width: 240rpx;
+  margin-bottom: 10rpx;
+}
+
+.rowItem text {
+  font-size: 24rpx;
+  color: #212121;
+}
+
+/* 垂直方向 */
+
+.verticalLayout {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 横向滑动列表样式 */
+
+.scroll-x {
+  white-space: nowrap;
+  display: flex;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title-text {
+  font-size: 40rpx;
+  color: #fff;
+}

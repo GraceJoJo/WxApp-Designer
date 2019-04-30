@@ -1,8 +1,10 @@
 {
   "pages": [
-    "pages/welcome/welcome",
+    "pages/home/home",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/category/category",
+    "pages/discovery/discovery"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -17,13 +19,13 @@
     "selectedColor": "#d1a938",
     "list": [
       {
-        "pagePath": "pages/welcome/welcome", 
+        "pagePath": "pages/home/home", 
         "text": "设计",
         "iconPath": "src/icn_designer.png", 
         "selectedIconPath": "src/icn_designer_highlight.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/discovery/discovery",
         "text": "发现",
         "iconPath": "src/icn_guang.png",
         "selectedIconPath": "src/icn_guang_highlight.png"

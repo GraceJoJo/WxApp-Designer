@@ -1,0 +1,54 @@
+/* pages/category/category.wxss */
+
+.notify-item {
+  width: 690rpx;
+  background: #fff;
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  border-bottom: solid 1px #eee;
+}
+
+.notify-item  image {
+  width: 240rpx;
+  height: 240rpx;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+}
+
+.notify-item .avatar {
+  flex: 1;
+}
+
+.notify-item .notify-content {
+  flex: 4;
+  text-align: left;
+  height: 220rpx;
+}
+/* 最多显示两行，多余的显示... */
+.notify-item .notify-content text {
+  display: block;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.notify-item .notify-content .notify-title {
+  color: #212121;
+  font-size: 32rpx;
+  line-height: 34rpx;
+  margin-bottom: 20rpx;
+}
+
+.notify-item .notify-content .notify-source {
+  color: #818a8f;
+  font-size: 26rpx;
+  margin-bottom: 20rpx;
+}
+
+.notify-item .notify-content .notify-price {
+  color: #a79f76;
+  font-size: 32rpx;
+  margin-top: 30rpx;
+  padding: 0 0 8rpx 0;
+}
